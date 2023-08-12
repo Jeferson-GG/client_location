@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Localizador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="area">
+  
+      <div class="container">
+        <h1 style="font-size: xxx-large;">Suporte ao Entregador</h1>
+        <h2><img src="img/dpcimagem.png"></h2>
+      </div>
+      <div class="area_input">
+        <strong><label style="font-size:x-large; color: rgb(0, 0, 0);">Codigo do
+            Cliente:</label></strong>
+        <input type="number" id="codigo" class="form-control" style="width:30em; height: 2em; border-radius: 1em;">
+      </div>
+  
+      <div class="botao">
+        <input type="button" value="Verificar" button class="btn btn-success form-control" id="btnvalidar"
+          style="width:30em; height:3em; font-size: large; background-color: rgb(20, 184, 14); cursor: pointer;">
+      </div>
+  
+  
+    </div>
+  
+  
+  
+  </body>
+  <script src="validação.js"></script>
+  
+</html>
