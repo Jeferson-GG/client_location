@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Cliente</title>
+</head>
+<body style="background-color: darkgreen;">
+
+
+<h3 style="font: 50px arial; color: aliceblue;">Cliente Localizado!</h3>
+<div>
+    <p style="font: 25px arial; color: aliceblue;"> Nome Fantasia: "Luza Cosméticos",</p>
+    <p style="font: 25px arial; color: aliceblue;"> Número para contato"(71)3018-7666",</p>
+    <p style="font: 25px arial; color: aliceblue;">Horario de funcionamento:"a partir dás 08:00 AM".</p>
+    <p style="font: 25px arial; color: aliceblue;">Referência:"Encontra-se próximo a praça da Revolução."</p>
+    
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.64364247595!2d-38.4782821256893!3d-12.866278057698755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716115f6d6108a9%3A0xf6d81d3b066e107a!2sLuza%20Cosm%C3%A9ticos!5e0!3m2!1spt-BR!2sbr!4v1692126295038!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<br>
+<input  id="inicio" type="button" value="Voltar">
+
+
+<script>
+    const botao = document.getElementById("inicio")
+
+    botao.addEventListener("click", fnInicio)
+    function fnInicio(){
+       window.alert('Redirecionando')
+       location.href = 'index.html'
+    }
+</script>
+
+
+</body>
+
+
+</html>

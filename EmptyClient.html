@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Cliente</title>
+</head>
+<body style="background-color: darkgreen;">
+
+
+<h3 style="font: 50px arial; color: aliceblue;">Cliente Localizado!</h3>
+<div>
+    <p style="font: 25px arial; color: aliceblue;"> Nome Fantasia: "",</p>
+    <p style="font: 25px arial; color: aliceblue;"> Número para contato"(71)-",</p>
+    <p style="font: 25px arial; color: aliceblue;">Horario de funcionamento:"a partir dás 08:00 AM".</p>
+    <p style="font: 25px arial; color: aliceblue;">Referência:"Encontra-se próximo."</p>
+    
+</div>
+<h2>Localização: </h2>
+
+<br>
+<input  id="inicio" type="button" value="Voltar">
+
+
+<script>
+    const botao = document.getElementById("inicio")
+
+    botao.addEventListener("click", fnInicio)
+    function fnInicio(){
+       window.alert('Redirecionando')
+       location.href = 'index.html'
+    }
+</script>
+
+
+</body>
+
+
+</html>

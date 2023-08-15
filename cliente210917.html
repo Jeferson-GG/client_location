@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Cliente</title>
+</head>
+<body style="background-color: darkgreen;">
+
+
+<h3 style="font: 50px arial; color: aliceblue;">Cliente Localizado!</h3>
+<div>
+    <p style="font: 25px arial; color: aliceblue;"> Nome Fantasia: "Mercado Rio verde",</p>
+    <p style="font: 25px arial; color: aliceblue;"> Número para contato"(71)999783970",</p>
+    <p style="font: 25px arial; color: aliceblue;">Horario de funcionamento:"a partir dás 08:00 AM".</p>
+    <p style="font: 25px arial; color: aliceblue;">Referência:"Encontra-se no Largo de Valéria."</p>
+    
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.10312996615698!2d-38.43308610811286!3d-12.86586292724493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71611925449fed7%3A0xb50f4a49e064ff17!2sComercial%20de%20Alimentos%20Rio%20Verde!5e0!3m2!1spt-BR!2sbr!4v1692124057553!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<br>
+<input  id="inicio" type="button" value="Voltar">
+
+
+<script>
+    const botao = document.getElementById("inicio")
+
+    botao.addEventListener("click", fnInicio)
+    function fnInicio(){
+       window.alert('Redirecionando')
+       location.href = 'index.html'
+    }
+</script>
+
+
+</body>
+
+
+</html>
