@@ -4,49 +4,59 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
-    margin: 0; /* Removendo margens padrão */
-    padding: 0; /* Removendo preenchimento padrão */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    text-align: center;
-}
-
-div {
-    background-color: rgba(0, 0, 0, 2.8);
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
     color: white;
-    margin: 10px; /* Espaçamento externo */
-    padding: 5px; /* Espaçamento interno */
-    max-width: 300px; /* Limita a largura do conteúdo */
+    padding: 20px;
+    max-width: 300px;
     width: 100%;
-    box-sizing: border-box; /* Inclui borda e preenchimento na largura total */
-}
- 
-h4{
-    text-align: center;
+    box-sizing: border-box;
 }
 
+h1,
+/* Adicionando animação ao título */
+h4,.logoLogin {
+    text-align: center;
+    color: green;
+    opacity: 0; /* Inicia invisível */
+    animation: fadeIn 5s forwards; /* Nome da animação, duração e estado final */
+}
+
+/* Definindo a animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 input {
-    padding: 10px; /* Reduzindo o preenchimento */
+    padding: 10px;
     border: none;
     outline: none;
     font-size: 15px;
     border-radius: 10px;
     width: 93%;
-    margin-bottom: 10px; /* Espaçamento inferior */
+    margin-bottom: 10px;
 }
 
 .btn {
     background-color: green;
     border: none;
-    padding: 10px; /* Reduzindo o preenchimento */
+    padding: 10px;
     width: 100%;
     border-radius: 10px;
     color: white;
     font-size: 15px;
     cursor: pointer;
+    margin-top: 10px; /* Adicionando espaçamento acima do botão */
 }
 
 .btn:hover {
@@ -62,22 +72,26 @@ input {
 
 /* Media query para dispositivos menores */
 @media (max-width: 600px) {
-    body {
-        min-height: 100vh; /* Ajuste na altura mínima */
-    }
-
-    div {
-        max-width: 100%; /* Largura máxima ocupando a tela */
-    }
-
     .logoLogin {
-        width: 80px; /* Redução do tamanho do logo */
+        width: 80px;
         height: 80px;
     }
 
     input,
-    .inputSubmit,
+    .btn,
     a {
-        font-size: 14px; /* Redução das fontes */
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px; /* Reduzindo o espaçamento interno */
+    }
+
+    input {
+        width: 100%; /* Largura total para campos de entrada */
+    }
+
+    .btn {
+        margin-top: 15px; /* Aumentando o espaçamento acima do botão */
     }
 }
