@@ -4,9 +4,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 1vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
+    max-height: 100vh;
+    max-width: 300vh;
+    min-width: 100vh;
 }
 
 .container {
