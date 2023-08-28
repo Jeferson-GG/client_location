@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 1vh;
     margin: 0;
     padding: 0;
 }
@@ -94,4 +94,18 @@ input {
     .btn {
         margin-top: 15px; /* Aumentando o espaçamento acima do botão */
     }
+}
+
+/* ... Your existing CSS ... */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+
 }
