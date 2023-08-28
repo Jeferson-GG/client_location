@@ -70,29 +70,25 @@ input {
     display: block;
 }
 
-/* Media query para dispositivos menores */
-@media (max-width: 600px) {
+ /* Media query para dispositivos menores */
+ @media (max-width: 600px) {
+    body {
+        min-height: 100vh; /* Ajuste na altura mínima */
+    }
+
+    div {
+        max-width: 100%; /* Largura máxima ocupando a tela */
+    }
+
     .logoLogin {
-        width: 80px;
+        width: 80px; /* Redução do tamanho do logo */
         height: 80px;
     }
 
     input,
-    .btn,
+    .inputSubmit,
     a {
-        font-size: 14px;
-    }
-
-    .container {
-        padding: 10px; /* Reduzindo o espaçamento interno */
-    }
-
-    input {
-        width: 100%; /* Largura total para campos de entrada */
-    }
-
-    .btn {
-        margin-top: 15px; /* Aumentando o espaçamento acima do botão */
+        font-size: 14px; /* Redução das fontes */
     }
 }
 
